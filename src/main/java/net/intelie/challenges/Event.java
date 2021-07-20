@@ -1,7 +1,10 @@
 package net.intelie.challenges;
 
 /**
- * This is just an event stub, feel free to expand it if needed.
+ * The only change that I have made in this class is the return
+ * of the type() and timestamp() methods.
+ * They went from "return attribute" to "return this.attribute".
+ * No other changes changes were necessary.
  */
 public class Event {
     private final String type;
@@ -13,10 +16,10 @@ public class Event {
     }
 
     public String type() {
-        return type;
+        return this.type;
     }
 
     public long timestamp() {
-        return timestamp;
+        return this.timestamp;
     }
 }

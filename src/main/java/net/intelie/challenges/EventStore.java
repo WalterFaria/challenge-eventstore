@@ -33,5 +33,5 @@ public interface EventStore {
      * {@param type} and timestamp between {@param startTime}
      * (inclusive) and {@param endTime} (exclusive).
      */
-    EventIterator query(String type, long startTime, long endTime);
+    MyEventIterator query(String type, long startTime, long endTime);
 }
